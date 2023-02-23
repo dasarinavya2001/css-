@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+        margin: 150px auto;
+        position: relative;
+      }
+      .img1 {
+        height: 300px;
+        width: 300px;
+      }
+      .text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: rgb(20, 109, 20);
+        background-color: rgba(255, 255, 255, 0.425);
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        transform: scale(0);
+        transition: 1s all ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div1:hover .text {
+        transform: scale(1) rotate(360deg);
+      }
+      .text-rotate {
+        transition: 1s all ease;
+        transition-delay: 1s;
+        transform: scale(0);
+      }
+      .div1:hover .text-rotate {
+        transform: scale(1) rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <img src="img1.jpg" alt="" class="img1" />
+      <div class="text">
+        <div class="text-rotate">
+          <h1>BABY</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
