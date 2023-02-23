@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+        margin: 150px auto;
+        transition: 1s all ease;
+      }
+      .div1:hover {
+        transform: scale(-0.5);
+      }
+      .div2:hover {
+        transform: scaleX(1.5);
+      }
+      .div3:hover {
+        transform: scaleY(0.5);
+      }
+      .div4:hover {
+        transform: scaleX(1.2) scaleY(0.5) scaleZ(1.5) rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">scale</div>
+    <div class="div2">scale-x</div>
+    <div class="div3">scale-y</div>
+    <div class="div4">xysr</div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 300px;
+        width: 100px;
+        background-color: lightpink;
+        transition: 1s all ease;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .div1:hover {
+        transform: translate(50px);
+      }
+      .div2:hover {
+        transform: translateX(80px);
+      }
+      .div3:hover {
+        transform: translateY(90px);
+      }
+      .div4:hover {
+        transform: translateX(50px) translateY(50px) translateZ(100px)
+          rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="div1">translate</div>
+      <div class="div2">translate-x</div>
+      <div class="div3">translate-y</div>
+      <div class="div4">xyz</div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        height: 200px;
+        width: 200px;
+        border-top: 5px solid red;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin: 150px auto;
+        animation: loader 1s ease infinite;
+        border-radius: 50%;
+      }
+      .div1 {
+        height: 150px;
+        width: 150px;
+        border-bottom: 5px solid green;
+        border-top: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin: 20px;
+        animation: loader 1s ease infinite;
+        transition: 1s all ease;
+        border-radius: 50%;
+      }
+      .div2 {
+        height: 100px;
+        width: 100px;
+        border-right: 5px solid blue;
+        border-left: 5px solid transparent;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        margin: 20px;
+        animation: loader 1s ease infinite;
+        transition: 1s all ease;
+        border-radius: 50%;
+      }
+      .div3 {
+        height: 50px;
+        width: 50px;
+        border-left: 5px solid lightcoral;
+        border-right: 5px solid transparent;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        margin: 20px;
+        animation: loader 1s ease infinite;
+        transition: 1s all ease;
+        border-radius: 50%;
+      }
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div1">
+        <div class="div2">
+          <div class="div3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
