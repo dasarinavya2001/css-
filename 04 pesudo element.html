@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: auto;
+        width: 200px;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+      .div1::after {
+        content: ---;
+      }
+      .div1::first-letter {
+        font-size: 30px;
+      }
+      .div1::first-line {
+        color: aqua;
+      }
+      .div1::selection {
+        background-color: blueviolet;
+      }
+      li {
+        color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repellendus
+      maiores vitae accusamus quo molestias? Beatae dolores qui nostrum illo
+      laboriosam, aperiam mollitia doloribus nobis in illum maiores rerum
+      veritatis.
+      <seletion></seletion>
+      <ul>
+        <li>list1</li>
+        <li>list2</li>
+      </ul>
+    </div>
+  </body>
+</html>
