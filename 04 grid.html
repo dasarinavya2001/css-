@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid programe</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        justify-items: center;
+      }
+      .div1,
+      .div3,
+      .div5,
+      .div7,
+      .div9 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid darkblue;
+        background-color: lightcoral;
+      }
+      .div2,
+      .div4,
+      .div6,
+      .div8,
+      .div10 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid darkblue;
+        background-color: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div1"><h1>saidulu</h1></div>
+      <div class="div2"><h1>navya</h1></div>
+      <div class="div3"><h1>saidulu</h1></div>
+      <div class="div4"><h1>navya</h1></div>
+      <div class="div6"><h1>saidulu</h1></div>
+      <div class="div7"><h1>navya</h1></div>
+      <div class="div8"><h1>saidulu</h1></div>
+      <div class="div9"><h1>navya</h1></div>
+      <div class="div10"><h1>saidulu</h1></div>
+    </div>
+  </body>
+</html>
