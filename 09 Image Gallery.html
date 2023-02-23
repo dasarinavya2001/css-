@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-items: center;
+            gap: 20px;
+    
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            transition: 1s all ease;
+     }
+        .img1:hover{
+            transform: rotate(180deg);
+        }
+        .img2:hover{
+            transform: scale(0.5);
+        }
+        .img3:hover{
+            transform: skewX(20deg);
+        } 
+        .img4:hover{
+            transform: translate(20px,0);
+        }
+        .img5:hover{
+            transform: scaleY(1.5);
+        }
+        .img6:hover{
+            transform: scaleX(1.4);
+        }
+        .img7:hover{
+            transform: translateX(20px);
+        }
+        .img8:hover{
+            transform: skewY(40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img1">
+            <img src="images/img1.jpg" alt="" class="img1">
+        </div>
+        <div class="img2">
+            <img src="images/img2.jpg" alt="" >
+        </div>
+        <div class="img3">
+            <img src="images/img3.webp" alt="">
+        </div>
+        <div class="img4">
+            <img src="images/img4.jfif" alt="">
+        </div>
+        <div class="img5">
+            <img src="images/img5.webp" alt="">
+        </div>
+        <div class="img6">
+            <img src="images/img6.jpg" alt="">
+        </div>
+        <div class="img7">
+            <img src="images/img7.jpg" alt="">
+        </div>
+        <div class="img8">
+            <img src="images/img8.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>

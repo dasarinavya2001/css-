@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .main-list{
+            background-color: lightseagreen;
+            height: 90px;
+        }
+        .main-list li{
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+            
+        
+        }
+        .dis-menu{
+            position: relative;
+        }
+        .show-menu{
+            position: absolute;
+            display: none;
+            width: 90px;
+            top: 70px;
+        }
+        .show-menu li{
+            background-color:lightslategray;
+            padding: 20px;
+        }
+        .dis-menu:hover .show-menu{
+            display: block;
+        }
+        .dis-menu .link1 span{
+            transition: 1s all ease;
+        }
+        .dis-menu:hover span{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul class="main-list">
+            <li><a href="">Home</a></li>
+            <li class="dis-menu">
+                <a href="" class="link1">Services<span class="fa-sharp fa-solid fa-angle-down"></span></a>
+            <ul class="show-menu">
+                <li><a href="">Service1</a></li>
+                <li><a href="">Service2</a></li>
+            </ul>
+            </li>
+            <li><a href="">Bold</a></li>
+            <li><a href="">Contact As</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
