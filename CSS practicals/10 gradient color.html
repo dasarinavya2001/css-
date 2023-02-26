@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadient Color Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .gredient{
+            height: 700px;
+            width: 100%;
+            background-image: radial-gradient(white,red,white);
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        padding: 20px;
+        border: 2px solid black;
+        height: 100vh;
+        
+        }
+        input{
+            margin: 10px 0px;
+            height: 35px;
+            padding: 20px;
+            
+        }
+        button{
+            height: 40px;
+            width: 130px;
+            color:white;
+            background-color: blue;
+            
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20;
+            border: 2px solid black;
+            width: 300px;
+        }
+        .h1{
+            text-align: center;
+        }
+        .h1::after{
+            content: "";
+            display: inline-block;
+            background-color: blue;
+            height: 4px;
+            width: 50px;
+            margin: 7px 7px;
+        }
+        .h1::before{
+            content:"" ;
+            display: inline-block;
+            background-color: blue;
+            height: 4px;
+            width: 50px;
+            margin: 7px 7px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="gredient">
+        <div class="container">
+            <center>
+            <form action="get">
+        <lable class="login"><H1 class="h1">Login</H1></lable>
+        <input type="text" placeholder="email address">
+        <input type="text" placeholder="password">
+        <button>login</button>
+        </form>
+        </center>
+        </div>
+    </div>
+</body>
+</html>

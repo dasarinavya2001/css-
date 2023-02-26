@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        form{
+        width:40% ;
+    
+        margin: auto;
+        border: 2px solid black;
+        }
+        .row{
+            display: flex;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .col-1{
+            flex: 1;
+            text-align: right;
+            padding: 5px;
+        }
+        .col-2{
+            flex: 2;
+            padding: 5px;
+        }
+        input[type="text"],
+        [type="password"],[type="number"]{
+
+        height: 30px;
+            width: 250px;
+            padding: 10px;
+        }
+        input[type="radio"]{
+            height: 20px;width: 20px;
+        }
+        input[type="checkbox"]{
+            height:20px;
+            width: 20px;
+        }
+        input[type="select"]{
+height: 30px;
+width: 250px;
+        }
+        button{
+            height: 40px;
+            width: 200px;
+            background-color: blue;
+            border-radius: 10px;
+            border: none;
+         }
+         .row-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+    </style>
+</head>
+<body>
+    <form action="get">
+        <div class="row-1">
+            <div class="col-1"></div>
+            <div class="col-2"><h1>Registration form</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>Frist Name</lable>
+            </div>
+            <div class="col-2">
+                <input type="text" placeholder="Enter Frist Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <Lable>Last Name</Lable>
+            </div>
+            <div class="col-2">
+                <input type="text" placeholder="Last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <Lable>Date Of Birth</Lable>
+            </div>
+            <div class="col-2">
+                <input type="text" placeholder="D-O-B">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>Gender</lable>
+            </div>
+            <div class="col-2">
+                <input type="radio" name="gen" >Male
+                <input type="radio" name="grn">Female
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>password</lable>
+            </div>
+            <div class="col-2">
+                <input type="password" placeholder="Enter password"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>subject</lable>
+            </div>
+            <div class="col-2">
+                <input type="checkbox">Html
+                <input type="checkbox">Css
+                <input type="checkbox">J.S
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable >Experience</lable>
+            </div>
+            <div class="col-2">
+                <select>
+                    <option value="dropdown list ">----select-----</option>
+                    <option>2years</option>
+                    <option>3years</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>Address</lable>
+            </div>
+            <div class="col-2">
+                <textarea name="textarea" cols="40" rows="6" placeholder="Enter Your Address"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>Mobile Number</lable>
+            </div>
+            <div class="col-2">
+                <input type="number" placeholder="0000000000">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>Email Id</lable>
+            </div>
+            <div class="col-2">
+                <input type="text" placeholder=" Enter your Email id">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <lable>Create Password</lable>
+            </div>
+            <div class="col-2">
+                <input type="text" placeholder="Enter password">
+                        </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <button>Register</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
