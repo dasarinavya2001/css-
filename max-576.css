@@ -1,0 +1,192 @@
+@media (max-width:576px){
+    .container{
+        margin: 0px 30px;
+    }
+    /* =========header-section=========== */
+    .header .bg-img{
+        height: 700px;
+    }
+    .header .header-flex .logo{
+        flex: 10;
+    }
+    .header .header-flex .nav{
+        display: none;
+    }
+    .header .header-flex .show-menu{
+        flex: 1;
+        display: block;
+        padding-left: 10px;
+    }
+    /* ============background-img===== */
+/* ============music-1=========== */
+.music-1 .music-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.music-1 .music-flex .left-img{
+    padding:0px 0px ;
+}
+.music-1 .music-flex .left-img img{
+    height: 400px;
+    width: 530px;
+}
+
+/* ============music-1=========== */
+.music-1 .music-padding{
+    padding: 50px 0px;
+}
+.music-1 .music-flex{
+    display: flex;
+}
+.music-1 .music-flex .left-img{
+    flex: 1;
+    padding:0px 30px ;
+    overflow: hidden;
+}
+.music-1 .music-flex .left-img img{
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    transition: 1s all ease;
+}
+.music-1 .music-flex .left-img:hover .img3{
+    transform:rotate(360deg) scale(0.2);
+}
+.music-1 .music-flex .right-text{
+    flex: 1;
+    text-transform: capitalize;
+}
+.music-1 .music-flex .right-text h5{
+    text-transform: uppercase;
+    color: purple;
+    padding-bottom: 15px;
+}
+.music-1 .music-flex .right-text h1{
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+.music-1 .music-flex .right-text p{
+    color:purple;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.music-1 .music-padding .right-text button{
+    height: 50px;
+     width: 140px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+/* ===========music-2=========== */
+/* ===========music-2=========== */
+.music-2 .music-2-padding{
+    padding:50px 0px;
+}
+.music-2 .music-2-flex{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.music-2 .music-2-flex .music-img .text{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+/* =============music-3=========== */
+.music-3 .music-3-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+/* =========music-4======== */
+.music-4 .m-4-p .m-4-flex{
+    display: flex;
+    flex-direction: column;
+}
+.music-4 .m-4-flex .m4-details .m4-details-1{
+    display: flex;
+    flex-direction: column;
+}
+/* ===========music-5=========*/
+.music-5 .muisc-5-p{
+    padding: 80px 0px;
+}
+.music-5 .music-5-flex{
+    display: flex;
+    flex-direction: column;
+}
+.music-5 .music-5-flex .left-animation{
+  padding: 50px 0px;
+}
+/* ===========music-6========== */
+.music-6 .music-6-grid-box{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    }
+.music-6 .music-6-grid-box .grid-box .img-scale img{
+  height: 250px;
+  width: 350px;
+}
+/* =======music-7======= */
+.music-7 .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+/*
+.music-7 .gallery-grid img{
+    height: 180px;
+    width: 250px;
+}*/
+/* =========music-8============== */
+.music-8 .music-8-flex{
+    display: flex;
+    flex-direction: column;
+}
+/* ========music-9======= */
+.music-9 .music-9-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+/* ========music-10======== */
+.music-10 .bg-img .music-10-p{
+    padding:20px ;
+}
+.music-10 .form-flex{
+    display: flex;
+   flex-direction: column;
+}
+.music-10 .form-flex .left-content h1{
+    font-size: 30px;
+}
+.music-10 .form-flex .right-form .form-flex{
+    display: flex;
+   flex-direction: column;
+}
+.music-10 .form-flex .right-form .form-flex input[type="text"]{
+width: 350px;
+}
+.music-10 .form-flex .right-form .form-flex button{
+    width:350px;
+}
+
+/* =========footer========== */
+.footer .footer-grid{
+    display: grid;
+    grid-template-columns:1fr;
+}
+.footer .end-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer .end-footer .terms ul{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+}
