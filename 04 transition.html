@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      div {
-        height: 100px;
-        width: 100px;
-        background-color: black;
-        margin: 20px 40px;
-      }
-      .div1 {
-        transition-property: all;
-        transition-duration: 1s;
-        transition-timing-function: ease;
-      }
-      .div1:hover {
-        width: 300px;
-      }
-      .div2 {
-        transition-property: all;
-        transition-duration: 1s;
-        transition-timing-function: ease-in;
-      }
-      .div2:hover {
-        width: 350px;
-      }
-      .div3:hover {
-        width: 400px;
-      }
-      .div3 {
-        transition-property: all;
-        transition-duration: 1s;
-        transition-timing-function: ease-out;
-      }
-      .div4 {
-        transition-property: all;
-        transition-duration: 1s;
-        transition-timing-function: ease-in-out;
-      }
-      .div4:hover {
-        width: 500px;
-      }
-      .div5 {
-        transition-property: all;
-        transition-duration: 1s;
-        transition-timing-function: linear;
-      }
-      .div5:hover {
-        width: 600px;
-      }
+        div{
+            height: 100px;
+            width: 100px;
+            margin-top: 20px;
+
+        }
+        .div1{
+            background-color: rgb(16, 220, 220);
+            transition-property: all;
+            transition-delay: 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease;
+        }
+        .div1:hover{
+            width: 300px ;
+        }
+        .div2{
+            background-color: blueviolet;
+            transition: 1s all ease-in;
+        }
+        .div2:hover{
+            width: 300px;
+
+        }
+        .div3{
+            background-color: blue;
+            transition: 1s ease-out all;
+        }
+        .div3:hover{
+            width: 300px;
+        }
+        .div4{
+            background-color: red;
+            transition: 1s ease-in-out all;
+        }
+        .div4:hover{
+            width: 300px;
+        }
+        .div5{
+            background-color: brown;
+            transition:  1s linear all;
+        }
+        .div5:hover{
+            width: 300px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="div1"></div>
     <div class="div2"></div>
     <div class="div3"></div>
     <div class="div4"></div>
     <div class="div5"></div>
-  </body>
+</body>
 </html>
